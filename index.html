@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Card</title>
+  <link rel="stylesheet" href="style.css">
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--AOS-->
+</head>
+
+<body>
+  <div class="christmas-card" data-aos="zoom-in-up" data-aos-delay="10" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+    <!--INNER-->
+    <div class="cover-inner">
+      <img src="Christmas-Cover.png" width="100%" alt="">
+    </div>
+    <!--INNER-->
+
+    <!--OUTER-->
+    <div class="cover-outer">
+      <img src="Christmas-depan.png" width="100%" alt="">
+    </div>
+    <!--OUTER-->
+    <div class="text">
+      <p class="title">
+        Merry Christmas!!!
+      </p>
+      <p>
+        Dalam momen yang penuh cahaya dan kehangatan Natal,
+        mari kita renungkan keajaiban kelahiran Sang Penebus.
+        Semoga sinar-Nya menerangi setiap langkah kita dalam kehidupan,
+        membawa harapan, damai, dan kasih yang tiada tara.
+      </p>
+      <p>Hope your day goes great</p>
+    </div>
+  </div>
+
+  <audio autoplay>
+    <source src="Natal.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+    <div class="wrapper">
+      <div class="main-scroll" data-aos="zoom-in-up" data-aos-delay="10" data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+        <p>\Scrool Kebawah/</p>
+      </div>
+      <div class="main" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <p> Selamat Natal, semoga kasih dan damai Natal senantiasa menyertai perjalanan rohani kita.
+          Kiranya Natal ini mengingatkan kita akan nilai-nilai kebaikan dan kesederhanaan,
+          serta mempererat ikatan kasih antara kita semua.</p>
+      </div>
+      <div class="main" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <p>Di musim ini, mari kita buka hati untuk menerima berkat dan cinta-Nya, dan biarlah sukacita natal selalu ada
+          dihati kita.</p>
+      </div>
+      <div class="main" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <p>Ditengah hari yang berbahagia ini, jika anda ingin membagikan sukacita natal yang penuh berkat. <br><br>Anda
+          dapat mengirimkannya melalui:</p>
+      </div>
+      <div class="main" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <p><strong>Transfer bank BRI</strong><br>
+        <pre id="copy-text">018301096234502</pre>
+        </p>
+        <p>Elia Roysandi Manurun</p>
+        <button class="button" onclick="copyText()">Salin No.ATM</button>
+      </div>
+      <div class="main" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <p><strong>DANA, ShopePay</strong><br>
+        <pre id="copy-text2">081255583094</pre>
+        </p>
+        <p>Elia Roysandi Manurun</p>
+        <button class="button" onclick="copyText2()">Salin No.HP</button>
+      </div>
+      <div class="main" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <p><a class="wa" href="https://wa.me/6281255583094/?text=Selamat Natal dan Tahun baru Elia.">Informasi lebih
+            lanjut <br>KLIK
+            DISINI untuk menghubungi saya</a></p>
+      </div>
+      <div class="kosong"></div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    function copyText() {
+      const textToCopy = document.getElementById("copy-text").textContent;
+      navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+          alert("No.ATM berhasil disalin!");
+        })
+        .catch(err => {
+          console.error("Gagal menyalin teks:", err);
+          alert("Terjadi kesalahan saat menyalin teks.");
+        });
+    }
+
+  </script>
+  <script>
+    function copyText2() {
+      const textToCopy2 = document.getElementById("copy-text2").textContent;
+      navigator.clipboard.writeText(textToCopy2)
+        .then(() => {
+          alert("No.HP berhasil disalin!");
+        })
+        .catch(err => {
+          console.error("Gagal menyalin teks:", err);
+          alert("Terjadi kesalahan saat menyalin teks.");
+        });
+    }
+  </script>
+</body>
+
+</html>
